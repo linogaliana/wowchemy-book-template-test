@@ -3,8 +3,8 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: 'My Online Courses' # Website name
-baseURL: 'https://example.com/' # Website URL
+title: "Python pour les data scientists et économistes" # Website name
+baseURL: "/" # Website URL
 
 ############################
 ## PAGE OPTIONS
@@ -50,7 +50,7 @@ paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+ignoreFiles: ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$","\\.qmd","\\.Rmarkdown$","\\.R$" ,"_cache$", "\\.knit\\.md$", "\\.utf8\\.md$", "\\.py$","\\.csv$"]
 permalinks:
   authors: '/author/:slug/'
   tags: '/tag/:slug/'
