@@ -4,92 +4,67 @@
 #   The weight parameter defines the order that the links will appear in.
 
 
-[[main]]
- name = "Home"
- url = "course/"
- weight = 11
-
-[[main]]
- name = "Introduction"
- url = "/course/getting-started"
- weight = 20
-
-[[main]]
- name = "Manipuler des données"
- url = "/course/manipulation"
- weight = 30     
- 
-[[main]]
- name = "Visualiser des données"
- url = "/course/visualisation"
- weight = 40    
-
-[[main]]
- name = "Modéliser"
- url = "/course/modelisation"
- weight = 50       
-
-[[main]]
- name = "NLP"
- url = "/course/NLP"
- weight = 60    
-
-[[main]]
- name = "Approfondissements"
- url = "/course/modern-ds"
- weight = 70    
-
-[[main]]
- name = "Git"
- url = "/course/git"
- weight = 80       
-
-[[main]]
- name = "Annexes"
- url = "/course/annexes"
- weight = 90       
- identifier: plus
-
-[[main]]
- name = "Références"
- url = "/course/annexes/references/_index.md"
- weight = 91
- parent: plus
-
-[[main]]
- name = "Evaluation"
- url = "/course/annexes/evaluation/_index.md"
- weight = 99
- parent: plus
-
-
-[[main]]
- name = "Github"
- url = "https://github.com/linogaliana/python-datascientist"
- weight = 10
-# icon = "fa-github"
-# icon_pack = "fab"
-
-
-
 main:
   - name: Home
-    url: '/'
-    weight: 10
-  - name: Courses
+    url: course/
+    weight: 11
+  - name: Introduction
+    url: /course/getting-started
     weight: 20
-    identifier: courses
-  - name: Data science
-    PageRef: course/data-science/_index.md
-    weight: 10
-    parent: courses
-  - name: Robotics
-    PageRef: course/robotics/_index.md
-    weight: 20
-    parent: courses
-  - name: Blog
-    PageRef: post/_index.md
+  - name: Manipuler des données
+    url: /course/manipulation
     weight: 30
-  - name: Contact
-    PageRef: contact/index.md
+  - name: Visualiser des données
+    url: /course/visualisation
+    weight: 40
+  - name: Modéliser
+    url: /course/modelisation
+    weight: 50
+  - name: NLP
+    url: /course/NLP
     weight: 60
+  - name: Approfondissements
+    url: /course/modern-ds
+    weight: 70
+  - name: Git
+    url: /course/git
+    weight: 80
+  - name: Annexes
+    url: /course/annexes
+    weight: 90
+    identifier: plus
+  - name: Références
+    url: /course/annexes/references/_index.md
+    weight: 91
+    parent: plus
+  - name: Evaluation
+    url: /course/annexes/evaluation/_index.md
+    weight: 99
+    parent: plus
+  - name: Github
+    url: 'https://github.com/linogaliana/python-datascientist'
+    weight: 10
+
+
+
+#main:
+#  - name: Home
+#    url: '/'
+#    weight: 10
+#  - name: Courses
+#    weight: 20
+#    identifier: courses
+#  - name: Data science
+#    PageRef: course/data-science/_index.md
+#    weight: 10
+#    parent: courses
+#  - name: Robotics
+#    PageRef: course/robotics/_index.md
+#    weight: 20
+#    parent: courses
+#  - name: Blog
+#    PageRef: post/_index.md
+#    weight: 30
+#  - name: Contact
+#    PageRef: contact/index.md
+#    weight: 60
